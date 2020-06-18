@@ -28,7 +28,7 @@ body {
   margin: 0;
 
   background-color: $bgColor;
-  background: url("/assets/bg.png");
+  background: url("./assets/bg.png");
   background-size: cover;
   background-position: bottom right;
 
@@ -64,7 +64,7 @@ h3 {
 
 #splash {
   background-color: $bgColor;
-  background: url("/assets/bg.png");
+  background: url("./assets/bg.png");
   background-size: cover;
   background-position: bottom right;
 
@@ -140,18 +140,18 @@ h3 {
     width: 680px;
     top: -40px;
     left: -40px;
-    background-image: url("/assets/010-barrel.png");
+    background-image: url("./assets/010-barrel.png");
     background-size: 40px;
   }
 }
 
 .shooter {
-  background-image: url("/assets/030-ship.png");
+  background-image: url("./assets/030-ship.png");
   background-size: cover;
 }
 
 .invader {
-  background-image: url("/assets/048-octopus.png");
+  background-image: url("./assets/048-octopus.png");
   background-size: 35px;
   background-position: center;
   background-repeat: no-repeat;
@@ -160,12 +160,12 @@ h3 {
 }
 
 .hit {
-  background-image: url("/assets/001-skull and bones.png");
+  background-image: url("./assets/001-skull and bones.png");
   background-size: cover;
 }
 
 .projectile {
-  background-image: url("/assets/031-bomb.png");
+  background-image: url("./assets/031-bomb.png");
   background-size: cover;
 
   background-size: 30px;
