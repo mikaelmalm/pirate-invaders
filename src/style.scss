@@ -1,0 +1,174 @@
+$bgColor: #3c96d2;
+
+@font-face {
+  font-family: "BlackPearl";
+  src: url("./fonts/BlackPearl.svg#BlackPearl") format("svg"),
+    url("./fonts/BlackPearl.ttf") format("truetype"),
+    url("./fonts/BlackPearl.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Blackpearl";
+  src: url("./fonts/Blackpearl.eot");
+  src: url("./fonts/Blackpearl.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Blackpearl.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  min-height: 100%;
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+
+  background-color: $bgColor;
+  background: url("/assets/bg.png");
+  background-size: cover;
+  background-position: bottom right;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 8vmin;
+  color: #fff;
+  text-shadow: 3px 3px 0.5vmin #000;
+  font-family: "BlackPearl", cursive;
+  margin: 0;
+}
+
+h2 {
+  font-size: 5vmin;
+  color: red;
+  text-shadow: 3px 3px 0.5vmin #000;
+
+  font-family: "BlackPearl", cursive;
+}
+
+h3 {
+  font-size: 5vmin;
+  color: #fff;
+  text-shadow: 3px 3px 0.5vmin #000;
+
+  font-family: "BlackPearl", cursive;
+}
+
+#splash {
+  background-color: $bgColor;
+  background: url("/assets/bg.png");
+  background-size: cover;
+  background-position: bottom right;
+
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  padding: 8vmin 1vmin;
+  position: absolute;
+  opacity: 1;
+  color: #fff;
+  transition: opacity 0.25s;
+  box-sizing: border-box;
+
+  &.hidden {
+    opacity: 0;
+    z-index: -1;
+  }
+
+  button {
+    background: transparent;
+    border: 2px solid #fff;
+    padding: 5px 30px;
+    font-size: 2.5vmin;
+
+    color: #fff;
+
+    font-family: "BlackPearl", cursive;
+    transition: all 0.25s;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background: #fff;
+      color: #000;
+    }
+  }
+
+  .legal {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    font-family: "BlackPearl", cursive;
+    font-size: 16px;
+
+    text-shadow: 0px 0px 2px #000;
+
+    a {
+      color: #fff;
+    }
+  }
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+
+  height: 600px;
+  width: 600px;
+  background-color: $bgColor;
+  position: relative;
+
+  div {
+    width: 40px;
+    height: 40px;
+  }
+
+  &::before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    height: 680px;
+    width: 680px;
+    top: -40px;
+    left: -40px;
+    background-image: url("/assets/010-barrel.png");
+    background-size: 40px;
+  }
+}
+
+.shooter {
+  background-image: url("/assets/030-ship.png");
+  background-size: cover;
+}
+
+.invader {
+  background-image: url("/assets/048-octopus.png");
+  background-size: 35px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-radius: 10px;
+}
+
+.hit {
+  background-image: url("/assets/001-skull and bones.png");
+  background-size: cover;
+}
+
+.projectile {
+  background-image: url("/assets/031-bomb.png");
+  background-size: cover;
+
+  background-size: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
